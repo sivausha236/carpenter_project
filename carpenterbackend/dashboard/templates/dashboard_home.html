@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carpenter Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+        .card { border-radius: 15px; }
+        .btn-whatsapp { background-color: #25d366; color: white; }
+        .btn-map { background-color: #4285F4; color: white; }
+    </style>
+</head>
+
+<body class="bg-light">
+
+<div class="container py-4">
+    <h2 class="text-center mb-4">🔧 Sermakani Carpenter Dashboard</h2>
+
+    <!-- Today -->
+    <h4>📅 Today’s Bookings</h4>
+    <div class="row g-3">
+        {% for b in today %}
+        <div class="col-12">
+            <div class="card p-3 shadow-sm">
+                <h5>{{ b.name }}</h5>
+                <p><b>Time:</b> {{ b.time }}</p>
+                <p><b>Work:</b> {{ b.problem }}</p>
+                <p><b>Address:</b> {{ b.address }}</p>
+
+                <a href="https://wa.me/91{{ b.phone }}" class="btn btn-whatsapp btn-sm">WhatsApp</a>
+                <a href="https://www.google.com/maps/search/{{ b.address }}" target="_blank" class="btn btn-map btn-sm">Google Map</a>
+                <a href="/dashboard/complete/{{ b.id }}/" class="btn btn-success btn-sm">✔ Completed</a>
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-muted">No bookings today.</p>
+        {% endfor %}
+    </div>
+
+    <hr/>
+
+    <!-- Upcoming -->
+    <h4>⏳ Upcoming Bookings</h4>
+    <div class="row g-3">
+        {% for b in upcoming %}
+        <div class="col-12">
+            <div class="card p-3 shadow-sm">
+                <h5>{{ b.name }}</h5>
+                <p><b>Date:</b> {{ b.date }}</p>
+                <p><b>Work:</b> {{ b.problem }}</p>
+
+                <a href="https://wa.me/91{{ b.phone }}" class="btn btn-whatsapp btn-sm">WhatsApp</a>
+                <a href="https://www.google.com/maps/search/{{ b.address }}" target="_blank" class="btn btn-map btn-sm">Map</a>
+                <a href="/dashboard/complete/{{ b.id }}/" class="btn btn-success btn-sm">✔ Completed</a>
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-muted">No upcoming bookings.</p>
+        {% endfor %}
+    </div>
+
+    <hr/>
+
+    <!-- Completed -->
+    <h4>✔ Completed Bookings</h4>
+    <div class="row g-3">
+        {% for b in completed %}
+        <div class="col-12">
+            <div class="card p-3 bg-success text-white">
+                <h5>{{ b.name }}</h5>
+                <p><b>Date:</b> {{ b.date }}</p>
+                <p><b>Work:</b> {{ b.problem }}</p>
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-muted">No completed bookings.</p>
+        {% endfor %}
+    </div>
+
+    <br/>
+    <div class="text-center">
+        <a href="https://wa.me/918220546995" class="btn btn-danger w-100">
+            🚨 Emergency WhatsApp
+        </a>
+    </div>
+
+    <p class="text-center mt-4 text-muted">Powered by Siva</p>
+
+</div>
+</body>
+</html>

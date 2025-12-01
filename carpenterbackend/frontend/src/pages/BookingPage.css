@@ -1,0 +1,67 @@
+.booking-container {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  padding-top: 25px;
+}
+
+.booking-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+}
+
+.btn-book {
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn-book:hover {
+  background: #0069d9;
+}
+
+/* Success Page */
+.booking-success {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.whatsapp-btn {
+  display: block;
+  background: #25d366;
+  color: white;
+  padding: 12px;
+  margin: 15px auto;
+  border-radius: 8px;
+  width: 200px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home-btn {
+  display: block;
+  background: black;
+  color: white;
+  padding: 10px;
+  margin: auto;
+  width: 150px;
+  border-radius: 8px;
+  text-decoration: none;
+}

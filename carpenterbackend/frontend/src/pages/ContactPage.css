@@ -1,0 +1,87 @@
+.contact-container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Emergency Section */
+.emergency-contact-box {
+  background: #ffe5e5;
+  padding: 15px;
+  border-left: 6px solid red;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.call-btn, .whatsapp-btn {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.whatsapp-btn {
+  background: green;
+}
+
+/* Contact Details */
+.contact-details-box {
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+/* Contact Form */
+.contact-form-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #ddd;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.contact-form-box button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form-box button:hover {
+  opacity: 0.9;
+}
+
+/* Map Box */
+.map-box {
+  margin-top: 20px;
+}
+
+.map-box iframe {
+  border-radius: 8px;
+}

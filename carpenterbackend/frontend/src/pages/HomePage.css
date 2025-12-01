@@ -1,0 +1,58 @@
+.hero-section {
+  height: 300px;
+  background-image: url('/images/carpentry-hero.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero-title {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  color: white;
+  font-size: 16px;
+}
+
+/* Service Images */
+.service-img {
+  width: 100%;
+  border-radius: 10px;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Mobile Fixes */
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .hero-section {
+    height: 220px;
+  }
+}
+.emergency-banner {
+  background: red;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.emergency-banner a {
+  color: yellow;
+  text-decoration: underline;
+}

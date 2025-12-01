@@ -1,0 +1,100 @@
+.about-container {
+  padding: 30px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-header h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.about-header p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  display: flex;
+  gap: 20px;
+  background: #fff3e6;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.profile-details h2 {
+  margin-bottom: 10px;
+}
+
+.exp, .location {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.about-text, .about-text-tamil {
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.call-btn {
+  background: #4a2f14;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.call-btn:hover {
+  background: #6b4423;
+}
+
+/* Skills Section */
+.skills-section {
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.skill-box {
+  background: #ffe0b3;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #4a2f14;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    margin: 0 auto;
+  }
+}
