@@ -29,7 +29,11 @@ SECRET_KEY = 'django-insecure-4lcbb%9rjm!(j$2)(bxlnz9(_(cz(vp@=gfq1ctr!++!*e=2e_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'carpenter-backend.onrender.com',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
